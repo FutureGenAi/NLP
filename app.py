@@ -29,7 +29,6 @@ async def training():
     
 
 
-
 @app.post("/predict")
 async def predict_route(text):
     try:
@@ -41,5 +40,9 @@ async def predict_route(text):
         raise e
     
 
+
+
 if __name__=="__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080)
+
+    
